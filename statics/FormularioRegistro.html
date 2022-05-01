@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro a Six Flags</title>
+    <!-- <link rel="icon" href="https://logos-marcas.com/wp-content/uploads/2021/02/Gears-of-War-Logo-650x366.png" type="image"> -->
+</head>
+
+<body>
+    <h1>Six flags</h1>
+    <form action="../dynamics/boletos.php" method="post">
+        <fieldset>
+            <legend>Registro</legend>
+
+            <label for="nombre">Nombre(s): </label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
+            <br><br>
+            <label for="apellidos">Apellidos: </label>
+            <input type="text" id="apellidos" name="apellidos" required>
+            <br><br>
+            <label for="edad">Edad: </label>
+            <input type="number" id="edad" name="edad" required>
+            <br><br>
+            <label for="direccion">Dirección: </label>
+            <input type="text" id="direccion" name="direccion" required>
+            <br><br>
+            <label for="TipoDeBoleto">Tipo de boleto: </label>
+            <select name="TipoDeBoleto">
+                <option value="Boleto de un día">Boleto de un día</option>
+                <option value="Flash Pass">Flash Pass</option>
+                <option value="Adventure Pass 2022">Adventure Pass 2022</option>
+                <option value="Ultimate Pass 2022">Ultimate Pass 2022</option>
+                <option value="Comprar Six Flags 2022">Comprar Six Flags 2022</option>
+            </select>
+            <br><br>
+            <label for="boletos">Cantidad de boletos: </label>
+            <input type="number" id="boletos" name="boletos" required>
+            <br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Eliminar</button>
+        </fieldset>
+    </form>
+</body>
+</html>
